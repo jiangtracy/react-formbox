@@ -1,3 +1,5 @@
+import "./Box.css";
+
 /* 
 This Box component will display a div with a background color, width, and height based on the props passed to it.
 
@@ -7,16 +9,21 @@ BoxList -> Box.js
 
 */
 
-function Box({color, width, height}) {
+function Box({color, width, height, removeBox}) {
 
   const style = {
-    width,
-    height,
-    backgroundColor: color,
+    width: Number(width),
+    height: Number(height),
+    backgroundColor: color
   }
 
+
+
   return (
-    <li className="Box" style={style}></li>
+    <div className="Box">
+      <li className="Box" style={style}></li>
+      <button onClick={removeBox}>X</button>
+    </div>
   );
 };
 

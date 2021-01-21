@@ -1,0 +1,12 @@
+.Box {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  border: "1px solid black";
+
+}
+
+.Box button {
+  height: 50%;
+  margin-left: 20px;
+}
