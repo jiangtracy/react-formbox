@@ -12,8 +12,8 @@ BoxList -> Box.js
 function Box({color, width, height, removeBox}) {
 
   const style = {
-    width: Number(width),
-    height: Number(height),
+    width: `${width}px`,
+    height: `${height}px`,
     backgroundColor: color
   }
 

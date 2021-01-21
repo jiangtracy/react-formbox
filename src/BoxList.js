@@ -18,6 +18,7 @@ function BoxList() {
 
   /** 
    * Renders list of Box components 
+   * TODO: Make a variable to store boxes.map
    **/  
   function renderBoxes() {
     return (<ul>
